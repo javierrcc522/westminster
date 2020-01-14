@@ -11,7 +11,6 @@
     <link rel="icon" type="image/png" href="../../ResourcePackages/Westminster/assets/dist/images/favicons/favicon-16x16.png" sizes="16x16">
     <link rel="mask-icon" href="../../ResourcePackages/Westminster/assets/dist/images/favicons/safari-pinned-tab.svg" color="#211551">
     <link rel="stylesheet" href="../../ResourcePackages/Westminster/assets/dist/css/main.css" media="screen" />
-    <!--<link rel="stylesheet" href="../../ResourcePackages/Westminster/assets/dist/css/cera.css" media="none" onload="if(media!='screen')media='screen'" />-->
     <link rel="stylesheet" href="/ResourcePackages/Westminster/assets/dist/css/print.css" media="print" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../../styles/css-after.css" />   
@@ -2598,6 +2597,7 @@
                 </div>
             </nav>
         </header>
+
         <main id="content" role="main">
             <img class="img-responsive center margin-bottom" src="../../images/default-source/life-at-westminster/events-and-performances-images/events-and-performances-banner.jpg" title="Events-and-Performances-banner" alt="Events-and-Performances-banner" />
             <h1 class="title">Events and Performances</h1>
@@ -2606,8 +2606,8 @@
                 <div class="container">
                     <div id="MainContent_C011_Col00" class="sf_colsIn row">
                         <div id="MainContent_C015_Col00" class="sf_colsIn col-md-8 col-md-offset-2" data-sf-element="TextContainer" data-placeholder-label="Place content here">
-                            <div >
-                                <div >
+                            <div>
+                                <div>
                                     <p>Westminster hosts a variety of concerts, art exhibits, guest lectures, and theatrical performances.</p>
                                     <p>Our cultural events program showcases the talents of Westminster students and faculty, and brings national and international leaders to campus to share their ideas on business, politics, religion, art, and many other topics. Everyone is welcome to attend. Most events are free (or minimal cost) to the public.</p>
                                 </div>
@@ -2620,20 +2620,11 @@
                 <div class="container">
                     <div id="MainContent_C028_Col00" class="sf_colsIn row">
                         <div id="MainContent_C047_Col00" class="sf_colsIn col-md-8 col-md-offset-2" data-sf-element="TextContainer" data-placeholder-label="Place content here">
-                            <div >
-                                <div >
+                            <div>
+                                <div>
                                     <h2>Public Events Calendar</h2>
                                 </div>
                             </div>
-                            <script type="text/javascript">
-                                $(document).ready(function(){
-                                    $('a[href]').each(function(){
-                                        var oldUrl = $(this).attr("href"); // Get current url
-                                        var newUrl = oldUrl.replace("#", "#0"); // Create new url
-                                        $(this).attr("href", newUrl); // Set herf value
-                                    });
-                                });
-                            </script>
                             <div id="MainContent_C052_eventsFrontendCalendar">
                                 <div id="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_radWindowManager" style="display:none;">
                                     <!-- 2016.1.225.40 -->
@@ -2652,21 +2643,6 @@
                                     <div id="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_editEventDialog" style="display:none;">
                                         <div id="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_editEventDialog_C" style="display:none;"></div>
                                         <input id="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_editEventDialog_ClientState" name="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_editEventDialog_ClientState" type="hidden" />
-                                    </div>
-                                    <div id="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_radWindowManager_alerttemplate" style="display:none;">
-                                        <div class="rwDialogPopup radalert">
-                                            <div class="rwDialogText">
-                                                {1}
-                                            </div>
-                                            <div>
-                                                <a  onclick="$find('{0}').close(true);"
-                                                    class="rwPopupButton" href="javascript:void(0);">
-																									<span class="rwOuterSpan">
-																										<span class="rwInnerSpan">##LOC[OK]##</span>
-																									</span>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div id="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_radWindowManager_prompttemplate" style="display:none;">
                                         <div class="rwDialogPopup radprompt">
@@ -5693,17 +5669,17 @@
                                                                     <tbody>
                                                                     <tr>
                                                                         <td>
-                                                                            <a id="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_radScheduler_AdvancedEditForm_SharedCalendar_FNP" class="rcFastPrev" title="&lt;&lt;" href="#">&lt;&lt;</a>
+                                                                            <a class="rcFastPrev" title="&lt;&lt;" href="#">&lt;&lt;</a>
                                                                         </td>
                                                                         <td>
-                                                                            <a id="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_radScheduler_AdvancedEditForm_SharedCalendar_NP" class="rcPrev" title="&lt;" href="#">&lt;</a>
+                                                                            <a class="rcPrev" title="&lt;" href="#">&lt;</a>
                                                                         </td>
-                                                                        <td id="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_radScheduler_AdvancedEditForm_SharedCalendar_Title" class="rcTitle">August 2019</td>
+                                                                        <td class="rcTitle">August 2019</td>
                                                                         <td>
-                                                                            <a id="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_radScheduler_AdvancedEditForm_SharedCalendar_NN" class="rcNext" title=">" href="#">&gt;</a>
+                                                                            <a class="rcNext" title=">" href="#">&gt;</a>
                                                                         </td>
                                                                         <td>
-                                                                            <a id="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_radScheduler_AdvancedEditForm_SharedCalendar_FNN" class="rcFastNext" title=">>" href="#">&lt;&lt;</a>
+                                                                            <a class="rcFastNext" title=">>" href="#">&lt;&lt;</a>
                                                                         </td>
                                                                     </tr>
                                                                     </tbody>
@@ -5863,26 +5839,25 @@
                                         <input id="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_radScheduler_ClientState" name="ctl00_MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_radScheduler_ClientState" type="hidden" />
                                     </div>
                                     <div id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog">
-																						<div id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_windowWrapper" style="display: none;">
-																							<h2 class="sfcalendarEventPreviewTitle">
-																								<a id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_titleLink" class="sfTxtLbl"></a>
-																							</h2>
-																							<div class="sfcalendarEventPreviewContent">
-																								<div id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_startDateLabel" class="sfcalendarEventPreviewStartDate"></div>
-																								<div id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_startTimeLabel" class="sfcalendarEventPreviewEndDate"></div>
-																								<div id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_timeZoneDisplayNameLabel" class="sfcalendarEventTimeZone"></div>
-																								<div id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_editEventWrapper" class="sfcalendarEventPreviewEditLnkWrp">
-																									<a id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_editEventButton" class="sfcalendarEventPreviewEditLnk">Edit event</a>
-																								</div>
-																							</div>
-																						</div>
-																					</div>
+                                        <div id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_windowWrapper" style="display: none;">
+                                            <h2 class="sfcalendarEventPreviewTitle">
+                                                <a id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_titleLink" class="sfTxtLbl"></a>
+                                            </h2>
+                                            <div class="sfcalendarEventPreviewContent">
+                                                <div id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_startDateLabel" class="sfcalendarEventPreviewStartDate"></div>
+                                                <div id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_startTimeLabel" class="sfcalendarEventPreviewEndDate"></div>
+                                                <div id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_timeZoneDisplayNameLabel" class="sfcalendarEventTimeZone"></div>
+                                                <div id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_editEventWrapper" class="sfcalendarEventPreviewEditLnkWrp">
+                                                    <a id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_viewEventDialog_ctl00_ctl00_editEventButton" class="sfcalendarEventPreviewEditLnk">Edit event</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="sfcalendarSidebar">
                                         <div id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_calendarsList">
                                             <h2 class="sfcalendarListTitle">Calendars</h2>
                                             <ul id="MainContent_C052_eventsFrontendCalendar_ctl00_ctl00_calendarsList_ctl00_ctl00_wrapper" class="sfcalendarList"></ul>
                                         </div>
-                                        <!---->
                                     </div>
                                 </div>
                                 <span></span>
@@ -6239,7 +6214,7 @@
     <script src="../../ResourcePackages/Westminster/assets/dist/js/functions.min.js"></script>
     <script type="text/javascript" src="../../scripts/js-after.js"></script>
     <script type="text/javascript" src="../../scripts/searchBox.js"></script>
-
+    <script type="text/javascript" src="../../scripts/telerik.js"></script>
     
 
 </body>

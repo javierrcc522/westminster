@@ -12,15 +12,20 @@
   <link rel="icon" type="image/png" href="../../ResourcePackages/Westminster/assets/dist/images/favicons/favicon-16x16.png" sizes="16x16">
   <link rel="mask-icon" href="../../ResourcePackages/Westminster/assets/dist/images/favicons/safari-pinned-tab.svg" color="#211551">
   <link rel="stylesheet" href="../../ResourcePackages/Westminster/assets/dist/css/main.css" media="screen" />
-  <!--<link rel="stylesheet" href="../../ResourcePackages/Westminster/assets/dist/css/cera.css" media="none" onload="if(media!='screen')media='screen'" />-->
+
   <link rel="stylesheet" href="../../ResourcePackages/Westminster/assets/dist/css/print.css" media="print" />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../../styles/css-after.css" />
   <link rel="stylesheet" type="text/css" href="../../styles/index.css" />
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
- <meta name="Generator" content="Sitefinity 9.1.6180.0 PE" />
+   <meta name="Generator" content="Sitefinity 9.1.6180.0 PE" />
   <link rel="canonical" href="https://www.westminstercollege.edu/campus-life/events-and-performances/performing-arts-events" />
+  <script type="text/javascript" src="../../scripts/performing.js"></script>
+  <script type="text/javascript" src="../../scripts/js-before.js"></script>
+  <script type="text/javascript" src="../../scripts/searchBox.js"></script>
+  <script src="../../ResourcePackages/Westminster/assets/dist/js/bootstrap.min.js"></script>
+  <script src="../../ResourcePackages/Westminster/assets/dist/js/functions.min.js"></script>
 </head>
 <body>
  
@@ -2794,16 +2799,6 @@
           </div>
         </div>
       </section>
-      <script type="text/javascript">
-        var $btns = $(".filter").click(function() {
-          if ("all" == this.id) $("#parent > div").fadeIn(450);
-          else {
-            var i = $("." + this.id).fadeIn(450);
-            $("#parent > div").not(i).hide()
-          }
-          $btns.removeClass("active"), $(this).addClass("active")
-        });
-      </script>
     </main>
     <div id="custom-body-container-pre-footer"></div>
     <footer class="footer">
@@ -3024,9 +3019,5 @@
     </footer>
     <div id="custom-body-container-post-footer"></div>
   </div>
-  <script type="text/javascript" src="../../scripts/js-before.js"></script>
-  <script type="text/javascript" src="../../scripts/searchBox.js"></script>
-  <script src="../../ResourcePackages/Westminster/assets/dist/js/bootstrap.min.js"></script>
-  <script src="../../ResourcePackages/Westminster/assets/dist/js/functions.min.js"></script>
 </body>
 </html>
