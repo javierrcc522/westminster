@@ -6,9 +6,9 @@ a:visited {
     color: #8252c7;
 }
 
-a:hover, a:focus, a:active {
-    color: #ba9fe0;
-}
+/*a:hover, a:focus, a:active {*/
+/*    color: #ba9fe0;*/
+/*}*/
 
 #content div div h2.text-center.margin-top {
     margin-top: 36px;
