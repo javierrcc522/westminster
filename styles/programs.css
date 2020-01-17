@@ -10,6 +10,10 @@ a:visited {
 /*    color: #ba9fe0;*/
 /*}*/
 
+.card-block > h3 {
+    font-size: 2.4rem;
+}
+
 #content div div h2.text-center.margin-top {
     margin-top: 36px;
     margin-bottom: 0;
