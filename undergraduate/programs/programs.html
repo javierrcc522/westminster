@@ -10,26 +10,21 @@
     <link rel="icon" type="image/png" href="../../ResourcePackages/Westminster/assets/dist/images/favicons/favicon-16x16.png" sizes="16x16">
     <link rel="mask-icon" href="../../ResourcePackages/Westminster/assets/dist/images/favicons/safari-pinned-tab.svg" color="#211551">
     <link rel="stylesheet" href="../../ResourcePackages/Westminster/assets/dist/css/main.css" media="screen" />
-    <!--<link rel="stylesheet" href="../../ResourcePackages/Westminster/assets/dist/css/cera.css" media="none" onload="if(media!='screen')media='screen'" />-->
+
     <link rel="stylesheet" href="../../ResourcePackages/Westminster/assets/dist/css/print.css" media="print" />
     <link rel="stylesheet" type="text/css" href="../../styles/css-after.css" />
     <link rel="stylesheet" type="text/css" href="../../styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="../../styles/programs.css" />
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <meta name="Generator" content="Sitefinity 9.1.6180.0 PE" />
     <link rel="canonical" href="https://www.westminstercollege.edu/undergraduate/programs" />
     <meta name="description" content="Learn about our undergraduate programs and pursue the degree that best fits your interests. Challenge yourself with our new interdisciplinary courses." />
     <meta name="keywords" content="Undergraduate Programs, Westminster College" />
+
 </head>
 <body>
- 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.2/angular.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.2/angular-resource.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.2/angular-cookies.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.2/angular-animate.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.2/angular-sanitize.js" type="text/javascript"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.1/ui-bootstrap-tpls.min.js" type="text/javascript"></script>
-      
     <div id="custom-body-container-top"></div>
     <a class="skip" href="#content">Skip to Content</a>
     <div>
@@ -2595,77 +2590,293 @@
             <div id="MainContent_C016_Col00" class="sf_colsIn container-fluid directory-container" data-sf-element="Container Fluid" data-placeholder-label="Container Fluid">
                 <div class="row" data-sf-element="Row">
                     <div id="MainContent_C023_Col00" class="sf_colsIn col-md-12" data-sf-element="Column 1" data-placeholder-label="Column 1">
-                        <div ng-app="myApp">
-                            <div ng-controller="AppController as vm" data-ng-cloak="" type="UG">
+                        <div>
+                            <div>
                                 <div class="container">
-                                    <div class="row">
                                         <form id="programSearchForm">
-                                            <div ng-if="vm.type == 'UG' || vm.type == 'All'" class="form-group form-inline text-center">
+                                            <div class="form-group form-inline text-center">
                                                 <label class="sr-only" for="programSearch">Search All Programs</label>
                                                 <div class="inline-search">
-                                                    <input type="search" ng-model="vm.search.ProgramName" id="programSearch" placeholder="Search by Program Name" class="form-control inline-search__input">
+                                                    <input  class="form-control inline-search__input"
+                                                            id="programSearch"
+                                                            data-jplist-control="textbox-filter"
+                                                            data-group="data-group-1"
+                                                            data-name="my-filter-1"
+                                                            data-path=".name"
+                                                            type="text"
+                                                            value=""
+                                                            placeholder="Search by Program Name"
+                                                            data-clear-btn-id="name-clear-btn"
+                                                    />
                                                     <a href="#results" class="button inline-search--button">
                                                         <span aria-hidden="true" class="fa fa-search"></span>
                                                         <span class="sr-only">Search</span>
                                                     </a>
-                                                    <a href="#programSearchForm" ng-click="changeValue()" class="button inline-clear--button">
-                                                        <span aria-hidden="true" class="fa fa-times"></span>
-                                                        <span class="sr-only">Clear Search and Filters</span>
-                                                    </a>
+
                                                 </div>
                                             </div>
+
                                             <div class="from-group text-center">
-                                                <div ng-if="vm.type == 'UG' || vm.type == 'All'">
+                                                <div>
                                                     <p>Filter by Interest:</p>
                                                 </div>
-                                                <div ng-if="vm.type == 'GR'" class="programSearchForm-textWrapper">
-                                                    <p>Filter by Interest:</p>
-                                                </div>
-                                                <ul ng-if="vm.type != 'PRO'" class="inline-list">
-                                                    <li ng-repeat="discipline in vm.disciplines | orderBy : 'name' " class="ng-scope programs_filter-{{discipline.name[0] | lowercase}}{{discipline.name[1] | lowercase}}{{discipline.name[2] | lowercase}}{{discipline.name[3] | lowercase}}">
-                                                        <button ng-click="vm.interest(discipline)" ng-class="{active: discipline.active}" class="button button-grey button-small programs_filter-{{discipline.name[0] | lowercase}}{{discipline.name[1] | lowercase}}{{discipline.name[2] | lowercase}}{{discipline.name[3] | lowercase}}">
-                                                            {{discipline.name}}
-                                                        </button>
+                                            </div>
+
+
+                                            <div class="from-group text-center">
+                                                <ul class="inline-list ng-scope">
+
+                                                    <li class="ng-scope programs_filter-arts">
+                                                        <label class="button button-grey button-small programs_filter-all" for="all-checkbox">
+                                                            <input data-jplist-control="checkbox-text-filter"
+                                                                   data-path="default"
+                                                                   id="all-checkbox"
+                                                                   type="checkbox"
+                                                                   data-group="data-group-1"
+                                                                   data-or="type-filters"
+                                                            />
+                                                            All
+                                                        </label>
+                                                    </li>
+
+                                                    <li class="ng-scope programs_filter-arts">
+                                                        <label class="button button-grey button-small programs_filter-all" for="art-checkbox">
+                                                            <input data-jplist-control="checkbox-text-filter"
+                                                                   data-path=".art"
+                                                                   id="art-checkbox"
+                                                                   type="checkbox"
+                                                                   data-group="data-group-1"
+                                                                   data-or="type-filters"
+                                                            />
+                                                            Arts
+                                                        </label>
+                                                    </li>
+
+
+                                                    <li class="ng-scope programs_filter-busi">
+                                                        <label class="button button-grey button-small programs_filter-all" for="busi-checkbox">
+                                                            <input  data-jplist-control="checkbox-text-filter"
+                                                                    data-path=".busi"
+                                                                    id="busi-checkbox"
+                                                                    type="checkbox"
+                                                                    data-group="data-group-1"
+                                                                    data-or="type-filters"/>
+                                                            Business
+                                                        </label>
+                                                    </li>
+
+
+                                                    <li class="ng-scope programs_filter-busi">
+                                                        <label class="button button-grey button-small programs_filter-all" for="comu-checkbox">
+                                                            <input  data-jplist-control="checkbox-text-filter"
+                                                                    data-path=".comu"
+                                                                    id="comu-checkbox"
+                                                                    type="checkbox"
+                                                                    data-group="data-group-1"
+                                                                    data-or="type-filters"/>
+                                                            Communication
+                                                        </label>
                                                     </li>
                                                 </ul>
+
                                             </div>
-                                            <p ng-if="vm.type == 'UG' || vm.type == 'All'" class="text-center programSearchForm-textWrapper">
-                                                <a href="/undergraduate/programs/undecided">
-                                                    I have no idea what I want to do!
-                                                </a>
+                                            <p class="text-center programSearchForm-textWrapper">
+                                                <a href="/undergraduate/programs/undecided">I have no idea what I want to do!</a>
                                             </p>
-                                            <hr ng-if="vm.type != 'PRO'">
+                                            <hr>
                                         </form>
-                                    </div>
                                 </div>
-                                <p ng-if="vm.type != 'PRO'" class="text-center" id="results">{{filtered.length}}
+                                <p class="text-center" id="results">
                                     <span class="text-muted">Programs Based on Your Interests</span>
                                 </p>
                                 <div class="card-deck-wrapper">
-                                    <div class="card-deck text-center">
-                                        <div ng-if="vm.view == 'Grid'" ng-repeat="program in vm.programs | programFilter:vm.filter:vm.savedPrograms:vm.disciplineFilter | filter:vm.search as filtered" class="card programs_filter-{{program.ProgramName[0] | lowercase}}{{program.ProgramName[1] | lowercase}}{{program.ProgramName[2] | lowercase}}{{program.ProgramName[3] | lowercase}}">
-                                            <div class="card-block">
-                                                <h4>{{program.ProgramName}}</h4>
-                                                <p class="card-text">
-                                                    <small class="text-muted">
-                                                        <strong>{{program.TaxonomyProgramType.Text}}</strong>
-                                                        <br />
-                                                        {{program.TaxonomyDegreeType}}
-                                                        <br />
-                                                        {{program.TaxonomySchool[0].Text}}
-                                                        <br />
-                                                        {{program.TaxonomyProgramLength}}
+                                    <div data-jplist-group="data-group-1" class="card-deck text-center">
 
+                                        <div data-jplist-item>
+                                            <div class="art name card programs_filter-acco ">
+                                                <div class="card-block">
+                                                    <h4>Arts</h4>
+                                                    <p class="card-text"><small class="text-muted ng-binding"><strong class="ng-binding">Major</strong><br>
+                                                        Bachelor of Arts, Bachelor of Science<br>
+                                                        Bill and Vieve Gore School of Business<br>
+                                                        Four-Year Degree
                                                     </small>
-                                                </p>
-                                            </div>
-                                            <div class="card-footer">
-                                                <a ng-href="{{program.ProgramPageURL}}" class="button button-grey button-small">Learn More</a>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer"><a ng-href="/undergraduate/programs/accounting" class="button button-grey button-small" href="/undergraduate/programs/accounting">Learn More</a></div>
                                             </div>
                                         </div>
+
+                                        <div data-jplist-item>
+                                            <div class="art name card programs_filter-acco">
+                                                <div class="card-block">
+                                                    <h4>Arts Administration</h4>
+                                                    <p class="card-text"><small class="text-muted ng-binding"><strong class="ng-binding">Minor</strong><br>
+                                                        Bachelor of Arts, Bachelor of Science<br>
+                                                        Bill and Vieve Gore School of Business<br>
+                                                        Four-Year Degree
+                                                    </small>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer"><a ng-href="/undergraduate/programs/accounting" class="button button-grey button-small" href="/undergraduate/programs/accounting">Learn More</a></div>
+                                            </div>
+                                        </div>
+
+                                        <div data-jplist-item>
+                                            <div class="comu name card programs_filter-acco">
+                                                <div class="card-block">
+                                                    <h4>Communication</h4>
+                                                    <p class="card-text"><small class="text-muted ng-binding"><strong class="ng-binding">Minor</strong><br>
+                                                        Bachelor of S, Bachelor of Science<br>
+                                                        Bill and Vieve Gore School of Business<br>
+                                                        Four-Year Degree
+                                                    </small>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer"><a ng-href="/undergraduate/programs/accounting" class="button button-grey button-small" href="/undergraduate/programs/accounting">Learn More</a></div>
+                                            </div>
+                                        </div>
+
+                                        <div data-jplist-item>
+                                            <div class="art name card programs_filter-acco" style="">
+                                                <div class="card-block">
+                                                    <h4>Dance</h4>
+                                                    <p class="card-text"><small class="text-muted ng-binding"><strong class="ng-binding">Major</strong><br>
+                                                        Bachelor of Arts, Bachelor of Science<br>
+                                                        Bill and Vieve Gore School of Business<br>
+                                                        Four-Year Degree
+                                                    </small>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer"><a ng-href="/undergraduate/programs/accounting" class="button button-grey button-small" href="/undergraduate/programs/accounting">Learn More</a></div>
+                                            </div>
+                                        </div>
+
+                                        <div data-jplist-item>
+                                            <div class="art name card programs_filter-acco">
+                                                <div class="card-block">
+                                                    <h4>Educational Studies</h4>
+                                                    <p class="card-text"><small class="text-muted ng-binding"><strong class="ng-binding">Major</strong><br>
+                                                        Bachelor of Arts, Bachelor of Science<br>
+                                                        Bill and Vieve Gore School of Business<br>
+                                                        Four-Year Degree
+                                                    </small>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer"><a ng-href="/undergraduate/programs/accounting" class="button button-grey button-small" href="/undergraduate/programs/accounting">Learn More</a></div>
+                                            </div>
+                                        </div>
+
+                                        <div data-jplist-item>
+                                            <div class="art name card programs_filter-acco">
+                                                <div class="card-block">
+                                                    <h4>Elementary Education</h4>
+                                                    <p class="card-text"><small class="text-muted ng-binding"><strong class="ng-binding">Minor</strong><br>
+                                                        Bachelor of Arts, Bachelor of Science<br>
+                                                        Bill and Vieve Gore School of Business<br>
+                                                        Four-Year Degree
+                                                    </small>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer"><a ng-href="/undergraduate/programs/accounting" class="button button-grey button-small" href="/undergraduate/programs/accounting">Learn More</a></div>
+                                            </div>
+                                        </div>
+
+                                        <div data-jplist-item>
+                                            <div class="art name card programs_filter-acco">
+                                                <div class="card-block">
+                                                    <h4>English</h4>
+                                                    <p class="card-text"><small class="text-muted ng-binding"><strong class="ng-binding">Major</strong><br>
+                                                        Bachelor of Arts, Bachelor of Science<br>
+                                                        Bill and Vieve Gore School of Business<br>
+                                                        Four-Year Degree
+                                                    </small>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer"><a ng-href="/undergraduate/programs/accounting" class="button button-grey button-small" href="/undergraduate/programs/accounting">Learn More</a></div>
+                                            </div>
+                                        </div>
+
+                                        <div data-jplist-item>
+                                            <div class="name card programs_filter-acco">
+                                                <div class="card-block">
+                                                    <h4 class="art">Film Studies</h4>
+                                                    <p class="card-text"><small class="text-muted ng-binding"><strong class="ng-binding">Minor</strong><br>
+                                                        Bachelor of Arts, Bachelor of Science<br>
+                                                        Bill and Vieve Gore School of Business<br>
+                                                        Four-Year Degree
+                                                    </small>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer"><a ng-href="/undergraduate/programs/accounting" class="button button-grey button-small" href="/undergraduate/programs/accounting">Learn More</a></div>
+                                            </div>
+                                        </div>
+
+                                        <div data-jplist-item>
+                                            <div class="busi name card programs_filter-acco">
+                                                <div class="card-block">
+                                                    <h4>Honors</h4>
+                                                    <p class="card-text"><small class="text-muted ng-binding"><strong class="ng-binding">Major</strong><br>
+                                                        Bachelor of Arts, Bachelor of Science<br>
+                                                        Bill and Vieve Gore School of Business<br>
+                                                        Four-Year Degree
+                                                    </small>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer"><a ng-href="/undergraduate/programs/accounting" class="button button-grey button-small" href="/undergraduate/programs/accounting">Learn More</a></div>
+                                            </div>
+                                        </div>
+
+                                        <div data-jplist-item>
+                                            <div class="art name card programs_filter-acco">
+                                                <div class="card-block">
+                                                    <h4>Music</h4>
+                                                    <p class="card-text"><small class="text-muted ng-binding"><strong class="ng-binding">Major</strong><br>
+                                                        Bachelor of Arts<br>
+                                                        Bill and Vieve Gore School of Business<br>
+                                                        Four-Year Degree
+                                                    </small>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer"><a ng-href="/undergraduate/programs/accounting" class="button button-grey button-small" href="/undergraduate/programs/accounting">Learn More</a></div>
+                                            </div>
+                                        </div>
+
+                                        <div data-jplist-item>
+                                            <div class="busi name card programs_filter-acco">
+                                                <div class="card-block">
+                                                    <h4>Pilot</h4>
+                                                    <p class="card-text"><small class="text-muted ng-binding"><strong class="ng-binding">Major</strong><br>
+                                                        Bachelor of Arts, Bachelor of Science<br>
+                                                        Bill and Vieve Gore School of Business<br>
+                                                        Four-Year Degree
+                                                    </small>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer"><a ng-href="/undergraduate/programs/accounting" class="button button-grey button-small" href="/undergraduate/programs/accounting">Learn More</a></div>
+                                            </div>
+                                        </div>
+
+                                        <div data-jplist-item>
+                                            <div class="busi name card programs_filter-acco">
+                                                <div class="card-block">
+                                                    <h4>Bachelor of Business</h4>
+                                                    <p class="card-text"><small class="text-muted ng-binding"><strong class="ng-binding">Major</strong><br>
+                                                        Bachelor of Business Administration<br>
+                                                        Bill and Vieve Gore School of Business<br>
+                                                        Undergraduate Degree
+                                                    </small>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer"><a ng-href="/undergraduate/programs/accounting" class="button button-grey button-small" href="/undergraduate/programs/accounting">Learn More</a></div>
+                                            </div>
+                                        </div>
+
+                                        <div data-jplist-control="no-results" data-group="data-group-1" data-name="no-results">No Results Found</div>
                                     </div>
                                 </div>
-                                <a href="#programSearchForm" ng-click="changeValue()" class="button inline-clear--button" id="programSearchStartOver">Start a new search</a>                            </div>
+                                <a href="#programSearchForm" class="button inline-clear--button" id="name-clear-btn">Start a new search</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2891,15 +3102,17 @@
         <div id="custom-body-container-post-footer"></div>
     </div>
 
+        <script type="text/javascript" src="../../scripts/programs-2.js"></script>
+        <script>jplist.init()</script>
+        <script type="text/javascript" src="../../scripts/app.js"></script>
+        <script type="text/javascript" src="../../scripts/controller.js"></script>
+        <script type="text/javascript" src="../../scripts/filter.js"></script>
+        <script type="text/javascript" src="../../scripts/program-service.js"></script>
+        <script type="text/javascript" src="../../scripts/js-before.js"></script>
 
-    <script type="text/javascript" src="../../scripts/program.js"></script>
-  <script type="text/javascript" src="../../scripts/app.js"></script>
-    <script type="text/javascript" src="../../scripts/controller.js"></script>
-    <script type="text/javascript" src="../../scripts/filter.js"></script>
-    <script type="text/javascript" src="../../scripts/program-service.js"></script>
-    <script type="text/javascript" src="../../scripts/js-before.js"></script>
-    <script src="../../ResourcePackages/Westminster/assets/dist/js/bootstrap.min.js"></script>
-    <script src="../../ResourcePackages/Westminster/assets/dist/js/functions.min.js"></script>
-    <script src="../../scripts/searchBox.js" type="text/javascript"></script>
+
+        <script src="../../ResourcePackages/Westminster/assets/dist/js/bootstrap.min.js"></script>
+        <script src="../../ResourcePackages/Westminster/assets/dist/js/functions.min.js"></script>
+        <script src="../../scripts/searchBox.js" type="text/javascript"></script>
 </body>
 </html>
