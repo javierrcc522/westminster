@@ -1,4 +1,17 @@
 @charset "UTF-8";
+
+@media (max-width: 1000px) {
+
+    #wrap {
+        width: auto !important;
+        margin: 0 auto;
+    }
+
+    #calendar {
+        width: auto !important;
+    }
+}
+
 .fc {
     direction: ltr;
     text-align: left;
