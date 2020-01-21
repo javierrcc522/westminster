@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var calendar = new FullCalendar.Calendar(calendarEl, {
         plugins: [ 'dayGrid', 'list' ],
         header: {
-            left: 'prev,next today',
+            left: 'prev, today',
             center: 'title',
-            right: 'dayGridMonth,listWeek'
+            right: 'dayGridMonth,listWeek,next'
         },
         editable: true,
         eventLimit: true,
