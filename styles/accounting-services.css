@@ -1,0 +1,38 @@
+.col-md-12.accordions {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.directory-profile--accordion-item {
+    border: none !important;
+}
+
+.accordion-toggle.accordion-item .accordion-item-title h4:after {
+     font-family:Fontawesome !important;
+     content:'\f077';
+     float:right;
+     font-size:15px;
+    transition: all 500ms ease-in-out;
+    font-weight: lighter;
+ }
+.accordion-toggle.accordion-item.collapsed .accordion-item-title h4:after {
+    font-family: Fontawesome !important;
+    content: '\f078';
+    font-size: 15px;
+    transition: all 500ms ease-in-out;
+    font-weight: lighter;
+}
+
+.accordion-toggle.accordion-item {
+    background: #f3f3f4;
+    border-bottom: 0.1rem solid #e7e7e8;
+}
+
+.accordion-toggle.accordion-item.collapsed{
+    background: #ffffff;
+    border: 0.1rem solid #e7e7e8;
+    margin-bottom: 1rem;
+}
+
+
+
