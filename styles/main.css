@@ -10203,3 +10203,7 @@ tfoot {
 .is-required {
     color: #32207a
 }
+
+h2.text-center.margin-bottom.featuring {
+    font-size: 3.2rem;
+}
