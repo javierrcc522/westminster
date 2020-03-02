@@ -1,5 +1,10 @@
 $(document).ready(function () {
     $(".flexnav").flexNav();
+
+    $(".card-list.has-drop-down").click(function (e) {
+        $(this).toggleClass("active");
+        e.preventDefault(); /*ignores actual link*/
+    });
 });
 
 "use strict";
