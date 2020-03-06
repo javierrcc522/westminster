@@ -7,324 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lead Gen Landing Page Template | Westminster College | SLC, Utah</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../../../../ResourcePackages/Westminster/assets/dist/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="../../../../ResourcePackages/Westminster/assets/dist/images/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="../../../../ResourcePackages/Westminster/assets/dist/images/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="mask-icon" href="../../../../ResourcePackages/Westminster/assets/dist/images/favicons/safari-pinned-tab.svg" color="#211551">
-    <link rel="stylesheet" href="../../../../ResourcePackages/Westminster/assets/dist/css/main.css" media="screen" />
-    <link rel="stylesheet" href="../../../../ResourcePackages/Westminster/assets/dist/css/print.css" media="print" />
-    <link rel="stylesheet" type="text/css" href="../../../../styles/css-after.css" />
-    <link rel="stylesheet" type="text/css" href="../../../../styles/index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../../../../images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../../../images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="mask-icon" href="../../../../images/favicons/safari-pinned-tab.svg" color="#211551">
+
+    <link rel="stylesheet" href="../../../../styles/main.css" media="screen" />
+    <link rel="stylesheet" href="../../../../styles/print.css" media="print" />
+    <link rel="stylesheet" href="../../../../styles/css-after.css" />
+    <link rel="stylesheet" href="../../../../styles/index.css" />
+    <link rel="stylesheet" href="../../../../styles/apptrack.css" />
 
-    <style>
-        .label-marker {
-            display: none;
-        }
-    </style>
-
-    <style type="text/css" media="all">/*CSS ALREADY IN PAGES*/
-    body {
-        padding-top: 0;
-    }
-    .nav-header {
-        display: none;
-    }
-    .nav-cta, .menu-button {
-        display: none;
-    }
-    .footer {
-        display: none;
-    }
-
-    .is-required {
-        display: none;
-    }
-    .utm {display: none;}
-
-
-    /*END CSS ALREADY IN PAGES*/
-    /* GENERAL FIXES */
-    .landing-pages-padding-top {
-        padding-top: 5rem;
-    }
-
-    .landing-form-top {
-        padding: 0rem 3rem 1rem 3rem;
-        margin: -21rem 0rem 2rem 0rem;
-    }
-
-    .landing-form-button, .landing-below_form-content {
-        padding: 0rem 3rem;
-    }
-
-    h1 {
-        color: #8252C7;
-    }
-
-    .landing-form-top label {
-        position: absolute;
-        overflow: hidden;
-        height: 0px;
-        width: 0px;
-    }
-
-    input {
-        height: 48px !important;
-    }
-
-    select {
-        height: 48px !important;
-    }
-
-    .landing-below_form-content, .redirect-lead__submit.sf_form-submit-button {
-        text-align: center;
-    }
-
-    .landing-below_form-content p {
-        padding-top: 3rem;
-        border-top: 2px solid #211551;
-        margin: 1rem auto;
-        display: inline-block;
-    }
-
-    .landing-below_form-content .button, .redirect-lead__submit.sf_form-submit-button button, .sf-SubmitButton.button {
-        width: 100%;
-        background: #8252C7;
-    }
-
-    .button.accordion-item.landing-flat-dropdown--button:hover {
-        background: none;
-        color: #825c27;
-    }
-
-
-
-    .landing-border-top {
-        margin-top: 2rem;
-        padding-top: 4rem;
-        border-top: 2px solid #211551;
-
-    }
-
-    .button {
-        background: #8252C7;
-    }
-
-    /* HEADER IMAGE */
-    .landing-header-foreground_logo {
-        position: absolute;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
-
-
-    .row.landing-header-row {
-        position: relative;
-    }
-
-
-    .landing-header-background_banner {
-        min-height: 245px;
-        height: 23vw;
-        max-width: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-    .landing-header-background_banner .img-responsive.center.margin-bottom {
-        height: 100%;
-        min-height: 100%;
-        max-width: none;
-        min-width: 100%;
-        margin-bottom: 0px;
-        position: absolute;
-        right: 0px;
-    }
-
-
-    /* HEADER LOGOS */
-    .landing-centered-logo.img-responsive.center.margin-bottom {
-        margin: 0px auto;
-        max-height: 100%;
-    }
-
-    .landing-left-logo.img-responsive.center.margin-bottom {
-        margin: 0px auto 0px 24px;
-        max-height: 100%;
-    }
-
-    .landing-right-logo.img-responsive.center.margin-bottom {
-        margin: 0px 24px 0px auto;
-        max-height: 100%;
-    }
-
-
-
-
-    /* BUTTON ARROWS */
-    .sf-SubmitButton.button::after {
-        content: "";
-        width: 0px;
-        height: 0px;
-        border-top: 6px solid transparent;
-        border-bottom: 6px solid transparent;
-        border-left: 8px solid #f1f1de;
-        position: relative;
-        display: inline-block;
-        margin: 0px 0px -1px 8px;
-        line-height: 18px !important;
-    }
-
-    /* content and quote */
-    .landing-feature-quote h4 {
-        color: #8252c7;
-        line-height: 36px;
-        font-size: 28px;
-        padding: 0px 28px 0px 0px;
-        font-family: "CeraPRO-BoldItalic";
-    }
-
-    .landing-feature-quote p {
-        color:#8252c7;
-    }
-
-    /*CONVERSE HALL IMAGE*/
-
-    .relative-position-div {
-        position: relative;
-        padding-bottom: 0px;
-
-    }
-    #landing_pages-image_container-bottom_image {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-    #landing_pages-image_container-bottom_image img {
-        position: absolute;
-        bottom: -30px;
-        right: -30px;
-        max-width: 720px;
-        width: 100%;
-    }
-
-    /* FOOTER */
-
-
-
-
-    /*Nurture Pages*/
-    .feature-right {
-        padding: 4rem 4rem 2rem 4rem;
-    }
-
-    .feature-right h4 {
-        font-style:italic;
-        line-height:36px;
-        font-size:28px;
-        padding:0px 28px 0px 0px;
-    }
-
-    .feature-right {
-        margin-top: -186px;
-    }
-
-    .plate-thistle.feature-right {
-        padding: 2.5rem 2.5rem .5rem 2.5rem;
-    }
-
-
-
-
-    @media only screen and (max-width: 992px) {
-        h1 {
-            text-align: center;
-            padding-bottom: 1rem;
-        }
-        .relative-position-div {
-            position: relative;
-            padding-bottom: 96px;
-
-        }
-        .landing-form-top {
-            padding: 0rem 3rem 1rem 3rem;
-            margin: 0px 0rem 2rem 0rem;
-        }
-
-
-
-        .landing-pages-padding-top {
-            padding-top: 2rem;
-        }
-
-    }
-
-
-
-    @media only screen and (max-width: 768px) {
-        h1 {
-            font-size: 3rem;
-            color: #8252C7;
-            text-align: center;
-            padding-bottom: 1rem;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-        }
-
-        .feature-right {
-            margin-top: 0px;
-        }
-        .landing-centered-logo.img-responsive.center.margin-bottom, .landing-left-logo.img-responsive.center.margin-bottom, .landing-right-logo.img-responsive.center.margin-bottom  {
-            margin: 0px auto;
-            max-height: 180px;
-        }
-
-
-        .landing-header-background_banner .img-responsive.center.margin-bottom {
-            right: -180px;
-        }
-
-
-
-    }
-    </style>
-    <meta name="Generator" content="Sitefinity 9.1.6184.0 PE" />
-    <link rel="canonical" href="https://westminstercollege.edu/internal-content/landing-pages/template-pages/lead-gen-landing-page-template" />
 </head>
 <body>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPCLGP"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-<script src="/ScriptResource.axd?d=RABtvZ4JbFTeJVE9MGVYhARcYyziwKtgFg_lqvAbBMZg267wBJuKKgZX4C4kEw-LUdislTwh4yXnaUaokjqqHdK4sdulTqD3SbG5Yh6J6nKvfDPD9GBm3Mgv7GrgAJ6tGFOTkCFwK-1sM2hOFXJDMVYtGatGo_yanipmg8TGMeirztnkqoXYyUYeJPQL-RuJt_9E0rZvc0gOSVv7iC_QcQ2&amp;t=7b8fb4d7" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=z8JFRpEDGUZG_ah0ZU3ti0qJGjhMO6VwKgrd3_M1toBCAEooomm1qu10cfm393ykSVgBnqDFZX3XLcCEeZ6fnMfE_fz-JdA1vRx8Gaed9EupW0STU90ZvYsgmuJeulQlQl3BeGHH58IZfgjZLI1ql2Xp8Qy927ehZK8Gl1gMY3ei5tfgHaoS6QRz1N691AE1HZQOM7-AUMcasKHm9Yoemw2&amp;t=7b8fb4d7" type="text/javascript"></script>
-<a class="skip" href="#content">Skip to Content</a>
-<div>
+    <a class="skip" href="#content">Skip to Content</a>
     <header role="banner">
-
-        <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPCLGP"
-                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        </noscript>
-        <!-- End Google Tag Manager (noscript) -->
         <div class="nav-header">
             <a href="/" class="navbar-brand">
                 <svg class="logo-secondary-small"
@@ -344,9 +42,8 @@
                 <li>
                     <a class="nav-cta-link ga-ug-request-nav" href="https://enroll.westminstercollege.edu/Ellucian.ERecruiting.Web.External/Pages/prospectinquiry.aspx?f=94507b04-23dc-42f8-ab32-7b89fad95e1b&o=1b0396d4-27b5-4b95-9e9b-ce061ac9fe64">Request Info</a>
                 </li>
-                <!--  <li><a class="nav-cta-link ga-ug-request-nav" href="https://enroll.westminstercollege.edu/Ellucian.ERecruiting.Web.External/Pages/prospectinquiry.aspx?f=94507b04-23dc-42f8-ab32-7b89fad95e1b&o=1b0396d4-27b5-4b95-9e9b-ce061ac9fe64">Request Info</a></li> -->
             </ul>
-            <div id="TopNavigation_C034_Col00" class="sf_colsIn" ></div>
+            <div class="sf_colsIn" ></div>
             <button type="button" aria-expanded="false" class="navbar-toggle menu-button">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -358,13 +55,14 @@
             <div class="nav-container">
                 <div class="flexnav flexnav--full">
                     <div class="search-mobile">
-                        <div id="TopNavigation_C034_Col01" class="sf_colsIn" ></div>
+                        <div class="sf_colsIn" ></div>
                     </div>
-                    <div id="TopNavigation_C034_Col02" class="sf_colsIn" ></div>
+                    <div class="sf_colsIn" ></div>
                 </div>
             </div>
         </nav>
     </header>
+
     <main id="content" role="main">
         <div class="container text-center"></div>
         <div class="sf_colsIn container-fluid" >
@@ -378,28 +76,20 @@
             </div>
         </div>
         <div class="sf_colsIn container-fluid relative-position-div" >
-            <div >
-                <div >
-                    <div aria-hidden="true" id="landing_pages-image_container-bottom_image">
-                        <img alt="Drawing of Converse Hall" src="../../../../images/default-source/landing-pages/converse-hall-handdrawn.png" />
-                    </div>
-                </div>
+            <div aria-hidden="true" id="landing_pages-image_container-bottom_image">
+                <img alt="Drawing of Converse Hall" src="../../../../images/default-source/landing-pages/converse-hall-handdrawn.png" />
             </div>
             <div  class="sf_colsIn container relative-position-div" data-sf-element="Container" data-placeholder-label="Container">
                 <div class="row">
                     <div class="sf_colsIn col-12 col-md-7">
-                        <div >
-                            <div >
-                                <div class="col-12 landing-pages-padding-top"></div>
-                                <h1>Professors who know you and want to help you succeed.
-                                    <br />
-                                </h1>
-                            </div>
-                        </div>
+                        <div class="col-12 landing-pages-padding-top"></div>
+                        <h1>Professors who know you and want to help you succeed.
+                            <br />
+                        </h1>
                     </div>
                 </div>
                 <div class="row">
-                    <div id="MainContent_C067_Col00" class="sf_colsIn col-12 col-md-4 col-md-push-8 form-plate">
+                    <div class="sf_colsIn col-12 col-md-4 col-md-push-8 form-plate">
                         <div data-sf-role="form-container" class="landing_page-form_with_url_parse">
                             <input type="hidden" data-sf-role="form-id" value="36de2b46-beef-6cf4-9016-ff000033899e" />
                             <form action="?sf_cntrl_id=ctl00%24MainContent%24C046" method="POST" name="defaultFormctl00$MainContent$C046" enctype="multipart/form-data">
@@ -414,7 +104,6 @@
                                                 <p>Complete this form to be contacted by a Westminster admissions counselor.</p>
                                             </div>
                                         </div>
-                                        <!-- InputCssClass class variable -->
                                         <div class="form-group text-field-form-group" data-sf-role="text-field-container">
                                             <input data-sf-role="violation-restrictions" type="hidden" value='{"maxLength":"0", "minLength": "0"}' />
                                             <input data-sf-role="violation-messages" type="hidden" value='{"maxLength":"Entered text is too long", "required": "First name is required", "invalid": "Entry is not valid!", "regularExpression": "Invalid format"}' />
@@ -519,34 +208,30 @@
                             </form>
                         </div>
                         <div class="row">
-                            <div id="MainContent_C080_Col00" class="sf_colsIn col-md-12 no-padding landing_page-phone_dropdown">
+                            <div class="sf_colsIn col-md-12 no-padding landing_page-phone_dropdown">
                                 <div >
                                     <div >
                                         <div style="padding-bottom:1rem;font-size:2rem;">
-                                            <h4></h4>
                                             <p style="text-align:center;margin:0px;">Or call us today for
                                                 <br />more information:
                                             </p>
-                                            <h4 style="text-align:center;margin-bottom:48px;">
+                                            <h3 style="text-align:center;margin-bottom:48px;">
                                                 <a href="tel:18018322200" id="lead-gen-phone">801.832.2200</a>
-                                            </h4>
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="MainContent_C067_Col01" class="sf_colsIn col-12 col-md-7 col-md-pull-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
-                        <div >
-                            <div >
-                                <h2>At Westminster College, we're small for a reason.</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in imperdiet urna, vitae eleifend ipsum. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec vestibulum purus vestibulum magna mollis viverra. Vivamus ultrices feugiat mi, et pellentesque diam rutrum non.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in imperdiet urna, vitae eleifend ipsum. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in imperdiet urna, vitae eleifend ipsum. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                                <h3>Learn more about Westminster's professors and our unique environment for learning.</h3>
-                                <em></em>
-                            </div>
-                        </div>
+                    <div class="sf_colsIn col-12 col-md-7 col-md-pull-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
+                        <h2>At Westminster College, we're small for a reason.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in imperdiet urna, vitae eleifend ipsum. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec vestibulum purus vestibulum magna mollis viverra. Vivamus ultrices feugiat mi, et pellentesque diam rutrum non.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in imperdiet urna, vitae eleifend ipsum. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in imperdiet urna, vitae eleifend ipsum. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <h3>Learn more about Westminster's professors and our unique environment for learning.</h3>
+                        <em></em>
+
                         <div class="row">
                             <div class="sf_colsIn col-md-12 no-padding landing-border-top">
                                 <div class="row">
@@ -554,16 +239,10 @@
                                         <img class="img-responsive center margin-bottom" src="../../../../images/default-source/landing-pages/jadie-2020-edited.jpg" title="jadie-2020-edited" alt="Jadie, class of 2020, snowshoeing." />
                                     </div>
                                     <div class="sf_colsIn col-md-7 landing-feature-quote" data-sf-element="Column 2" data-placeholder-label="Column 2">
-                                        <div >
-                                            <div >
-                                                <div>
-                                                    <h4>"All of the professors are so supportive, and they really push you to be brave and trust in your ideas."
-                                                        <br />
-                                                    </h4>
-                                                    <p>-Jadie, Class of 2020</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <h4>"All of the professors are so supportive, and they really push you to be brave and trust in your ideas."
+                                            <br />
+                                        </h4>
+                                        <p>-Jadie, Class of 2020</p>
                                     </div>
                                 </div>
                             </div>
@@ -572,37 +251,33 @@
                 </div>
             </div>
         </div>
-        <section class="plate plate-night" >
+        <div class="plate plate-night" >
             <div class="container">
                 <div class="sf_colsIn row">
-                    <div >
-                        <div >
-                            <div class="bs4">
-                                <div class="row justify-content-between m-0">
-                                    <div class="col-md-auto col-12 mr-auto ml-0 d-flex d-md-block justify-content-center mt-4">
-                                        <img class="landing_pages-footer-logo" src="https://www.westminstercollege.edu/docs/default-source/developer-resource-files/all-pages/content-files/logos/primary-logo-small/westminster-primary-logo-small-birch.svg" width="108" />
-                                    </div>
-                                    <div class="col-md-auto col-12 ml-auto mr-0 d-flex d-md-block justify-content-center mt-4"></div>
-                                </div>
-                                <div class="row justify-content-center m-0">
-                                    <div class="col-md-auto col-12 mr-auto ml-0 d-flex d-md-block justify-content-center mt-4 order-1">
-                                        <p class="small text-center no-margin landing_pages-footer-copyright">&copy;
-                                            <span id="current-year-span">2019</span> Westminster College
-                                        </p>
-                                    </div>
-                                    <div class="col-md-auto col-12 ml-auto mr-0 d-flex d-md-block justify-content-center mt-4 order-0 order-md-1">
-                                        <p class="small landing_pages-footer-links-row">
-                                            <a href="https://www.westminstercollege.edu/  " target="_blank">Contact Us</a>
-                                            <a href="https://www.westminstercollege.edu/privacy" target="_blank">Privacy Policy</a>
-                                        </p>
-                                    </div>
-                                </div>
+                    <div class="bs4">
+                        <div class="row justify-content-between m-0">
+                            <div class="col-md-auto col-12 mr-auto ml-0 d-flex d-md-block justify-content-center mt-4">
+                                <img class="landing_pages-footer-logo" src="https://www.westminstercollege.edu/docs/default-source/developer-resource-files/all-pages/content-files/logos/primary-logo-small/westminster-primary-logo-small-birch.svg" width="108" />
+                            </div>
+                            <div class="col-md-auto col-12 ml-auto mr-0 d-flex d-md-block justify-content-center mt-4"></div>
+                        </div>
+                        <div class="row justify-content-center m-0">
+                            <div class="col-md-auto col-12 mr-auto ml-0 d-flex d-md-block justify-content-center mt-4 order-1">
+                                <p class="small text-center no-margin landing_pages-footer-copyright">&copy;
+                                    <span id="current-year-span">2019</span> Westminster College
+                                </p>
+                            </div>
+                            <div class="col-md-auto col-12 ml-auto mr-0 d-flex d-md-block justify-content-center mt-4 order-0 order-md-1">
+                                <p class="small landing_pages-footer-links-row">
+                                    <a href="https://www.westminstercollege.edu/  " target="_blank">Contact Us</a>
+                                    <a href="https://www.westminstercollege.edu/privacy" target="_blank">Privacy Policy</a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="footer">
@@ -822,7 +497,7 @@
         </section>
     </footer>
 
-</div>
+
 
 
 </body>
