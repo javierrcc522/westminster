@@ -14,8 +14,8 @@ $(document).ready(function() {
                     quote_url: "",
                     name: "",
                     content: "At Westminster College, we empower you to push boundaries as you chart your own life’s course. Here, you can step outside your comfort zone in an inspiring and reassuring environment—alongside others who share your desire to expand your knowledge, make a difference, and become a well-rounded person. Look inward. Reach out. Cultivate the unique traits and abilities that set you apart. Pursue your greatest aspirations.",
-                    photo_url: "../images/default-source/undergraduate/hub/life-at-westminster/two-students-in-front-of-converse.jpg?Status=Temp&sfvrsn=2",
-                    photo_url_mobile: "../images/default-source/undergraduate/hub/life-at-westminster/two-students-in-front-of-converse-mobile.jpg?Status=Temp&sfvrsn=2"
+                    photo_url: "../../images/default-source/undergraduate/hub/life-at-westminster/two-students-in-front-of-converse.jpg?Status=Temp&sfvrsn=2",
+                    photo_url_mobile: "../../images/default-source/undergraduate/hub/life-at-westminster/two-students-in-front-of-converse-mobile.jpg?Status=Temp&sfvrsn=2"
                 }, {
                     id: 2,
                     active: !0,
@@ -24,7 +24,7 @@ $(document).ready(function() {
                     name: "TRISTAN — Class of 2019",
                     content: "When Tristan came to Westminster to audition for a theatre scholarship, he noticed all the professors—and even the other students auditioning with him—clearly wanted him to succeed. That support is what he values most today. You too will have the chance to build the kind of relationships that lift you up and move you forward.",
                     photo_url: "../images/default-source/undergraduate/hub/life-at-westminster/tristan-spotlight.jpg?Status=Temp&sfvrsn=2",
-                    photo_url_mobile: "../images/default-source/undergraduate/hub/life-at-westminster/tristan-spotlight-mobile.jpg?Status=Temp&sfvrsn=2"
+                    photo_url_mobile: "../../images/default-source/undergraduate/hub/life-at-westminster/tristan-spotlight-mobile.jpg?Status=Temp&sfvrsn=2"
                 }, {
                     id: 3,
                     active: !0,
@@ -32,17 +32,17 @@ $(document).ready(function() {
                     quote_url: "",
                     name: "",
                     content: "Westminster’s distinctive setting isn’t just a pretty backdrop. It’s the muse and canvas for experiential, place-based learning. Discover the wilderness of the West while receiving guidance from professors who know your name and take the time to help you grow into a better version of yourself.",
-                    photo_url: "/images/default-source/undergraduate/hub/life-at-westminster/carson-on-a-mountain.jpg?Status=Temp&sfvrsn=2",
-                    photo_url_mobile: "/images/default-source/undergraduate/hub/life-at-westminster/carson-on-a-mountain-mobile.jpg?Status=Temp&sfvrsn=2"
+                    photo_url: "../../images/default-source/undergraduate/hub/life-at-westminster/carson-on-a-mountain.jpg?Status=Temp&sfvrsn=2",
+                    photo_url_mobile: "../../images/default-source/undergraduate/hub/life-at-westminster/carson-on-a-mountain-mobile.jpg?Status=Temp&sfvrsn=2"
                 }, {
                     id: 4,
                     active: !0,
                     title: "",
-                    quote_url: "../images/default-source/undergraduate/hub/life-at-westminster/audrey-quote.png?Status=Temp&sfvrsn=2",
+                    quote_url: "../../images/default-source/undergraduate/hub/life-at-westminster/audrey-quote.png?Status=Temp&sfvrsn=2",
                     name: "AUDREY — Class of 2018",
                     content: "At Westminster, Audrey enjoys marketing and gender studies classes, the golf team, intramural soccer, her campus community, her favorite Sugar House coffee shop, and the welcoming culture of the surrounding city. No matter what your interests are, you’ll find countless activities and spaces that make you feel at home.",
-                    photo_url: "../images/default-source/undergraduate/hub/life-at-westminster/audrey-spotlight.jpg?Status=Temp&sfvrsn=2",
-                    photo_url_mobile: "../images/default-source/undergraduate/hub/life-at-westminster/audrey-spotlight-mobile.jpg?Status=Temp&sfvrsn=2"
+                    photo_url: "../../images/default-source/undergraduate/hub/life-at-westminster/audrey-spotlight.jpg?Status=Temp&sfvrsn=2",
+                    photo_url_mobile: "../../images/default-source/undergraduate/hub/life-at-westminster/audrey-spotlight-mobile.jpg?Status=Temp&sfvrsn=2"
                 }],
                 s = document.getElementById("slider-life"),
                 o = document.getElementById("slide-inner"),
