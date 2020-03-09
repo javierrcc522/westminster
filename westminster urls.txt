@@ -28,10 +28,6 @@ https://westminstercollege.edu/undergraduate/first-year-admissions-counselors
 https://javierrcc522.github.io/westminster/about/resources/admissions/first-year-admissions-counselors/
 
 
-https://www.westminstercollege.edu/campus-life/camps
-https://javierrcc522.github.io/westminster/campus-life/camps/
-
-
 https://westminstercollege.edu/campus-life/events-and-performances 		
 https://javierrcc522.github.io/westminster/campus-life/events-and-performances/
 
@@ -85,6 +81,10 @@ https://javierrcc522.github.io/westminster/undergraduate/tuition-and-aid/
 
 Not done
 
+https://www.westminstercollege.edu/campus-life/camps
+https://javierrcc522.github.io/westminster/campus-life/camps/
+Note: missing smooth scrolling
+
 
 https://westminstercollege.edu/about/resources/giovale-library/databases
 You can use this page as reference to do it. https://javierrcc522.github.io/westminster/undergraduate/programs/
@@ -96,12 +96,15 @@ All tabs need to work --find background info-- , --find books and films---.....
 
 
 https://westminstercollege.edu/internal-content/resources-and-services/administrative-services/accounting-services
+Folder path -----  westminster/internal-content/resources-and-services/administrative-services/accounting-services ----
 
 
 https://westminstercollege.edu/about/academic-schools/undergraduate-schools/school-of-arts-and-sciences/music-department
-Folder path for the folder---- westminster/undergraduate/programs/music/about-the-program
+Folder path ---- westminster/undergraduate/programs/music/about-the-program
 
 
 https://westminstercollege.edu/internal-content/digital-signage/global-content
+This page was not on the folder that I gave you in the morning. Please download it from my GitHub with necessary css and js.
+Image are https:// please download those locally and add to folder.
 
 
