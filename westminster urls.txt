@@ -97,6 +97,7 @@ All tabs need to work --find background info-- , --find books and films---.....
 
 https://westminstercollege.edu/internal-content/resources-and-services/administrative-services/accounting-services
 Folder path -----  westminster/internal-content/resources-and-services/administrative-services/accounting-services ----
+Github:  https://javierrcc522.github.io/westminster/internal-content/resources-and-services/administrative-services/accounting-services/
 
 
 https://westminstercollege.edu/about/academic-schools/undergraduate-schools/school-of-arts-and-sciences/music-department
@@ -104,7 +105,9 @@ Folder path ---- westminster/undergraduate/programs/music/about-the-program
 
 
 https://westminstercollege.edu/internal-content/digital-signage/global-content
+https://javierrcc522.github.io/westminster/internal-content/digital-signage/global-content/
 This page was not on the folder that I gave you in the morning. Please download it from my GitHub with necessary css and js.
 Image are https:// please download those locally and add to folder.
+
 
 
